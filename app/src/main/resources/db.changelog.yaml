@@ -1,9 +1,25 @@
 databaseChangeLog:
   - changeSet:
-      id: 20201012_init.sql
+      id: 20201012_init
       author: Jakub Wisniewski
       sqlFile:
         relativeToChangelogFile: true
         stripComments: true
         splitStatements: false
         path: db.changelog/20201012_init.sql
+  - changeSet:
+      id: 20201206_add_users
+      author: Jakub Wisniewski
+      sqlFile:
+        relativeToChangelogFile: true
+        stripComments: true
+        splitStatements: false
+        path: db.changelog/20201206_add_users.sql
+  - changeSet:
+      id: 20201206_add_user_roles
+      author: Jakub Wisniewski
+      sqlFile:
+        relativeToChangelogFile: true
+        stripComments: true
+        splitStatements: false
+        path: db.changelog/20201213_add_user_roles.sql
