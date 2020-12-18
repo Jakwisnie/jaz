@@ -39,10 +39,6 @@ public class UserService {
     public void saveUser(String username, String password, Set<String> authorities) {
         UserEntity userEntity = new UserEntity(username,passwordEncoder.encode(password));
 
-        // ustawienie loginu i hasłą
-//        userEntity.setUsername(username);
-//        userEntity.setPassword(password);
-
         // wyciaganie roli z set i dodanie do tabeli role
         for (String auto : authorities){
             System.out.println("role " + auto);

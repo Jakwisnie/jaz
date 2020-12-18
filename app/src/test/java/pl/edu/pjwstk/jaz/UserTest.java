@@ -78,7 +78,7 @@ public class UserTest {
                 .cookies(response.getCookies())
                 .get("/api/auth0/is-ready")
                 .then()
-                .statusCode(HttpStatus.OK.value());
+                .statusCode(HttpStatus.FORBIDDEN.value());
         // @formatter:on
     }
     @Test

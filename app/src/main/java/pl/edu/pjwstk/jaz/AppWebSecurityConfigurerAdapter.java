@@ -16,7 +16,7 @@ public class AppWebSecurityConfigurerAdapter extends WebSecurityConfigurerAdapte
                 .antMatchers("/login").permitAll()
                 .antMatchers("/register").permitAll()
                 .antMatchers("/auth0/**").permitAll()
-                .antMatchers("/admin").hasRole("admin")//by wejsc cos co ma admin wymaga roli admin
+               // .antMatchers("/admin").hasRole("admin")//by wejsc cos co ma admin wymaga roli admin
                 .anyRequest().authenticated()
                 .and().csrf().disable();
     }

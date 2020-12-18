@@ -15,7 +15,7 @@ public class ReadinessController {
     @PersistenceContext
     private EntityManager entityManager;
 
-    @PreAuthorize("hasAnyAuthority('view-readiness','admin')")
+    @PreAuthorize("hasAnyAuthority('view-readiness','Admin')")
 
     @GetMapping("auth0/is-ready")
     @Transactional
