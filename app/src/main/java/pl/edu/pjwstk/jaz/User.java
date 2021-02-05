@@ -1,7 +1,9 @@
 package pl.edu.pjwstk.jaz;
 
+
 import java.util.HashSet;
 import java.util.Set;
+
 
 public class User {
     private String name;
@@ -64,5 +66,10 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return username;
     }
 }

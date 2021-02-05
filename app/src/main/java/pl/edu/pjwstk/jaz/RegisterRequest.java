@@ -1,5 +1,7 @@
 package pl.edu.pjwstk.jaz;
 
+
+
 public class RegisterRequest {
     private String name;
     private String lastName;
@@ -48,5 +50,6 @@ public class RegisterRequest {
     public String getPassword() {
         return password;
     }
+
 
 }

@@ -39,6 +39,10 @@ public class UserService {
     public void saveUser(String username, String password, Set<String> authorities) {
         UserEntity userEntity = new UserEntity(username,passwordEncoder.encode(password));
 
+        // ustawienie loginu i hasłą
+//        userEntity.setUsername(username);
+//        userEntity.setPassword(password);
+
         // wyciaganie roli z set i dodanie do tabeli role
         for (String auto : authorities){
             System.out.println("role " + auto);
@@ -55,16 +59,15 @@ public class UserService {
 
     //zwracanie user
     public UserEntity findUserByUsername(String username) {
-        return entityManager.createQuery("select ue from UserEntity ue where ue.username = :username", UserEntity.class)
-                .setParameter("username", username)//username
-                .getSingleResult();
+            return entityManager.createQuery("select ue from UserEntity ue where ue.username = :username", UserEntity.class)
+                    .setParameter("username", username)//username
+                    .getSingleResult();
     }
 
     //liczba userów
     public Number users() {
         Query q = entityManager.createQuery("SELECT count(ue) FROM UserEntity ue");
-        Number result = (Number) q.getSingleResult();
-        return result;
+        return (Number) q.getSingleResult();
     }
 
     //czy jest user
@@ -86,5 +89,9 @@ public class UserService {
             System.out.println(exception.getMessage());
         }
         return false;
+    }
+    public Long getIdFromUser(String username){
+        UserEntity name = userRepository.findByUsername(username).orElseGet(UserEntity::new);
+        return name.getId();
     }
 }

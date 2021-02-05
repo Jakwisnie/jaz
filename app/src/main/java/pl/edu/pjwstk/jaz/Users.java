@@ -22,7 +22,7 @@ public class Users {
 
     public boolean nameExist(String username)
     {
-        return userHashMap.containsKey(username);
+       return userHashMap.containsKey(username);
     }
 
     public User getUser(String username){return userHashMap.get(username);}
