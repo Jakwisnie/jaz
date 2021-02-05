@@ -7,8 +7,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.http.HttpStatus;
 import org.springframework.test.context.junit4.SpringRunner;
-import pl.edu.pjwstk.jaz.Authorization.LoginRequest;
-import pl.edu.pjwstk.jaz.Authorization.RegisterRequest;
+import pl.edu.pjwstk.jaz.LoginRequest;
+import pl.edu.pjwstk.jaz.RegisterRequest;
 import pl.edu.pjwstk.jaz.IntegrationTest;
 
 import static io.restassured.RestAssured.given;

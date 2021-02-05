@@ -10,12 +10,12 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.http.HttpStatus;
 import org.springframework.test.context.junit4.SpringRunner;
-import pl.edu.pjwstk.jaz.Authorization.LoginRequest;
-import pl.edu.pjwstk.jaz.Authorization.RegisterRequest;
+import pl.edu.pjwstk.jaz.LoginRequest;
+import pl.edu.pjwstk.jaz.RegisterRequest;
 import pl.edu.pjwstk.jaz.IntegrationTest;
-import pl.edu.pjwstk.jaz.Requests.CategoryRequest;
-import pl.edu.pjwstk.jaz.Requests.SectionNameRequest;
-import pl.edu.pjwstk.jaz.Requests.SectionRequest;
+import pl.edu.pjwstk.jaz.CategoryRequest;
+import pl.edu.pjwstk.jaz.SectionNameRequest;
+import pl.edu.pjwstk.jaz.SectionRequest;
 
 
 import java.util.Arrays;
@@ -52,13 +52,6 @@ public class SectionTest {
                 .post("/api/login")
                 .thenReturn();
     }
-//    public void sectionCreated(Response){
-//    given()
-//                .body(new SectionRequest("House",Arrays.asList("Kitchen","Bathroom")))
-//            .contentType(ContentType.JSON)
-//                .cookies(adminLogging().getCookies())
-//            .post("/api/addSection");
-//    }
 
     @Test
     public void adminAddSectionTest200() {
