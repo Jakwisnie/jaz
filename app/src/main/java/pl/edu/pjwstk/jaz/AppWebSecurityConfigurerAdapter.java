@@ -18,6 +18,10 @@ public class AppWebSecurityConfigurerAdapter extends WebSecurityConfigurerAdapte
 //                .antMatchers("/admin").hasAnyAuthority("Admin")
 //                .antMatchers("/users").hasAnyAuthority("User")
                 .antMatchers("/auth0/**").permitAll()
+<<<<<<< HEAD
+=======
+                .antMatchers("/admin").hasRole("admin")//by wejsc cos co ma admin wymaga roli admin
+>>>>>>> parent of d6e0615... 23
                 .anyRequest().authenticated()
                 .and().csrf().disable();
 

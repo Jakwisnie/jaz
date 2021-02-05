@@ -13,9 +13,14 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles({"test", "noSecurity"})
+<<<<<<< HEAD
 @TestExecutionListeners(listeners = {
         RestassuredPortListener.class,
         TestContextHolder.class
 }, mergeMode = TestExecutionListeners.MergeMode.MERGE_WITH_DEFAULTS)
+=======
+@TestExecutionListeners(listeners = {TestContextHolder.class},
+        mergeMode = TestExecutionListeners.MergeMode.MERGE_WITH_DEFAULTS)
+>>>>>>> parent of d6e0615... 23
 public @interface IntegrationTest {
 }

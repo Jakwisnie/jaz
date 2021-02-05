@@ -3,13 +3,15 @@ package pl.edu.pjwstk.jaz;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+<<<<<<< HEAD
 import org.springframework.web.bind.annotation.RestController;
 import pl.edu.pjwstk.jaz.UserEntity;
 import pl.edu.pjwstk.jaz.UserService;
 
 import javax.persistence.NoResultException;
+=======
+>>>>>>> parent of d6e0615... 23
 
-@RestController
 public class RegisterController {
 
     private final Users users;
@@ -38,6 +40,7 @@ public class RegisterController {
             userService.saveUser(registerRequest.getUsername(),registerRequest.getPassword(),user.getAuthorities());
             UserEntity singleResult = userService.findUserByUsername(registerRequest.getUsername());
             System.out.println("add admin" + singleResult);
+<<<<<<< HEAD
 
             }// !users.nameExist(registerRequest.getUsername())
             else if (!userService.userExist(registerRequest.getUsername()) ){
@@ -49,6 +52,18 @@ public class RegisterController {
                 UserEntity singleResult = userService.findUserByUsername(registerRequest.getUsername());
                 System.out.println("add user" + singleResult);
             }
+=======
+        }// !users.nameExist(registerRequest.getUsername())
+        else if (!userService.userExist(registerRequest.getUsername()) ){
+            User user = new User(registerRequest.getUsername(), registerRequest.getPassword());
+            user.addAuthorities(permission);
+            users.add(user);
+            // dodanie do bazy i wyciagniecie z bazy
+            userService.saveUser(registerRequest.getUsername(),registerRequest.getPassword(),user.getAuthorities());
+            UserEntity singleResult = userService.findUserByUsername(registerRequest.getUsername());
+            System.out.println("add user" + singleResult);
+        }
+>>>>>>> parent of d6e0615... 23
 
     }
     // remove

@@ -13,9 +13,13 @@ public class ReadinessController {
 
     private final EntityManager entityManager;
 
+<<<<<<< HEAD
     public ReadinessController(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
+=======
+    @PreAuthorize("hasAnyAuthority('view-readiness','admin')")
+>>>>>>> parent of d6e0615... 23
 
     @PreAuthorize("hasAnyAuthority('Everyone')")
     @Transactional
