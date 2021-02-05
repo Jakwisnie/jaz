@@ -11,47 +11,51 @@ import static org.hamcrest.Matchers.equalTo;
 @RunWith(SpringRunner.class)
 @IntegrationTest
 public class AverageIntegrationTest {
+
+
+
+
     @Test
-    public void czy_dodaje_i_dzieli() {
-        // @formatter:off
+    public void when_no_parameter_supplied_should_print_a_message() {
+      // @formatter:off
         given()
-                .when()
-                .param("numbers", "4,4,8,0,2,6")
-                .get("/api/average")
-                .then()
-                .body("message",equalTo("Average equals: 4"));
+        .when()
+              .get("/api/average")
+        .then()
+              .body("message",equalTo("Please put parameters."));
         //formatter:on
     }
     @Test
-    public void czy_usuwa_zero() {
+    public void should_remove_trailing_zero_case_1() {
         // @formatter:off
         given()
-                .when()
-                .param("numbers", "3,0,3,0")
+        .when()
+                .param("numbers", "1,2")
                 .get("/api/average")
-                .then()
+        .then()
                 .body("message",equalTo("Average equals: 1.5"));
         //formatter:on
     }
     @Test
-    public void czy_podnosi_w_gore() {
+    public void should_round_with_HALF_UP() {
         // @formatter:off
         given()
-                .when()
-                .param("numbers", "2,1,1,1,1,2")
+        .when()
+                .param("numbers", "2,1,1")
                 .get("/api/average")
-                .then()
+        .then()
                 .body("message",equalTo("Average equals: 1.33"));
         //formatter:on
     }
     @Test
-    public void gdy_brak() {
+    public void should_print_integer_if_zero_after_dot() {
         // @formatter:off
         given()
-                .when()
+        .when()
+                .param("numbers", "10,25,5,4")
                 .get("/api/average")
-                .then()
-                .body("message",equalTo("Please put parameters."));
+        .then()
+                .body("message",equalTo("Average equals: 11"));
         //formatter:on
     }
 }

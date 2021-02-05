@@ -8,24 +8,18 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 
+
 @RestController
 public class AverageController {
-    @GetMapping("average")
+
+    @GetMapping("average") //value = "numbers", required = false
     public AverageResult getAverage(@RequestParam(value = "numbers", required = false) String numbers) {
-
-        if(numbers == null){
-            return new AverageResult("Please put parameters.");
-        }
-        String[] num =numbers.split(",");
+        if ( numbers == null ) return new AverageResult("Please put parameters.");
+        String[] query = numbers.split(",");
         double sum = 0;
-        for (int j = 0; j < num.length; j++) {
-            String i = num[j];
-            sum += Integer.parseInt(i);
+        for(int i = 0; i < query.length; i++){
+            sum += Integer.parseInt(query[i]);
         }
-
-        BigDecimal rA = new BigDecimal(sum / num.length);
-        rA = rA.setScale(2, RoundingMode.HALF_UP).stripTrailingZeros();
-
-        return new AverageResult("Average equals: "+rA);
+        return new AverageResult("Average equals: " + (new BigDecimal(sum/query.length).setScale(2, RoundingMode.HALF_UP).stripTrailingZeros()));
     }
 }

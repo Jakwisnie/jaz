@@ -25,3 +25,4 @@ dependencies {
     testImplementation 'org.testcontainers:postgresql:1.14.3'
     testImplementation 'io.rest-assured:rest-assured' // weryfikacja wysoko poziomowa and to and
 }
+

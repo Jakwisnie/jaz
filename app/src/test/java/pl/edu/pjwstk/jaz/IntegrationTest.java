@@ -14,8 +14,8 @@ import java.lang.annotation.Target;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles({"test", "noSecurity"})
 @TestExecutionListeners(listeners = {
-        RestAssurePortListener.class,
+        RestassuredPortListener.class,
         TestContextHolder.class
-        }, mergeMode = TestExecutionListeners.MergeMode.MERGE_WITH_DEFAULTS)
+}, mergeMode = TestExecutionListeners.MergeMode.MERGE_WITH_DEFAULTS)
 public @interface IntegrationTest {
 }

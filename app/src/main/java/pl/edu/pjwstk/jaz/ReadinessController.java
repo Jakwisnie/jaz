@@ -5,23 +5,21 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
 
 @RestController
 public class ReadinessController {
 
-    @PersistenceContext
-    private EntityManager entityManager;
+    private final EntityManager entityManager;
 
-    @PreAuthorize("hasAnyAuthority('view-readiness','Admin')")
-
-    @GetMapping("auth0/is-ready")
-    @Transactional
-    public void readinessTest(){
+    public ReadinessController(EntityManager entityManager) {
+        this.entityManager = entityManager;
     }
 
-
-
+    @PreAuthorize("hasAnyAuthority('Everyone')")
+    @Transactional
+    @GetMapping("auth0/is-ready")
+    public void readinessTest() {
+    }
 }

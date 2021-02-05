@@ -1,4 +1,4 @@
-package pl.edu.pjwstk.jaz;
+package pl.edu.pjwstk.jaz.LoginRegister;
 
 
 import io.restassured.http.ContentType;
@@ -7,8 +7,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.http.HttpStatus;
 import org.springframework.test.context.junit4.SpringRunner;
-import pl.edu.pjwstk.jaz.LoginRequest;
-import pl.edu.pjwstk.jaz.RegisterRequest;
+import pl.edu.pjwstk.jaz.Authorization.LoginRequest;
+import pl.edu.pjwstk.jaz.Authorization.RegisterRequest;
 import pl.edu.pjwstk.jaz.IntegrationTest;
 
 
@@ -91,7 +91,7 @@ public class AdminTest {
                 .cookies(response.getCookies())
                 .get("/api/users")
                 .then()
-                .statusCode(HttpStatus.OK.value());
+                .statusCode(HttpStatus.FORBIDDEN.value());
         // @formatter:on
     }
 
