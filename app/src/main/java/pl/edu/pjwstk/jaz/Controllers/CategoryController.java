@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import pl.edu.pjwstk.jaz.DataBase.CategoryService;
 import pl.edu.pjwstk.jaz.Requests.CategoryRequest;
 import pl.edu.pjwstk.jaz.Requests.SectionRequest;
-import pl.edu.pjwstk.jaz.dao.SectionRepository;
+
 
 
 @RestController
@@ -28,7 +28,7 @@ public class CategoryController {
 
     @PreAuthorize("hasAnyAuthority('Admin')")
     @PostMapping("/editCategory")
-    public void editCategory(@RequestBody CategoryRequest categoryRequest, SectionRequest sectionRequest){
-        categoryService.editCategory(categoryRequest.getName(),categoryRequest.getNewName(), sectionRequest.getName(), sectionRequest.getName());
+    public void editCategory(@RequestBody CategoryRequest categoryRequest){
+        categoryService.editCategory(categoryRequest.getName(),categoryRequest.getNewName());
     }
 }

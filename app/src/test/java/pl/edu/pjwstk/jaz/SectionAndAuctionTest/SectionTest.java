@@ -52,13 +52,7 @@ public class SectionTest {
                 .post("/api/login")
                 .thenReturn();
     }
-//    public void sectionCreated(Response){
-//    given()
-//                .body(new SectionRequest("House",Arrays.asList("Kitchen","Bathroom")))
-//            .contentType(ContentType.JSON)
-//                .cookies(adminLogging().getCookies())
-//            .post("/api/addSection");
-//    }
+
 
     @Test
     public void adminAddSectionTest200() {
