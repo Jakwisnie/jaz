@@ -55,9 +55,10 @@ public class CategoryService {
     }
 
 
-    public void editCategory(String categoryName,String newCategoryName){
+    public void editCategory(String categoryName,String newCategoryName ,String sectionName ,String newSectionName){
 
         CategoryEntity categoryEntity = categoryRepository.findByName(categoryName).orElseGet(CategoryEntity::new);
+        SectionEntity sectionEntity = sectionRepository.findByName(sectionName).orElseGet(SectionEntity::new);
         if(categoryEntity.getName() == null){
             System.out.println("No category name like that");
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
@@ -68,8 +69,23 @@ public class CategoryService {
             else {
             this.categoryRepository.save(categoryEntity);
             }
+
+        }
+        if(sectionEntity.getName() == null) {
+            System.out.println("No section name like that");
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
+        }
+        else {
+
+            sectionEntity.setName(newSectionName);
+            if (newSectionName.equals("")) throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
+            else {
+                this.sectionRepository.save(sectionEntity);
+            }
         }
     }
+
+
 
 
 
