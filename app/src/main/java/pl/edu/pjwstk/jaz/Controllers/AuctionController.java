@@ -7,10 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import pl.edu.pjwstk.jaz.DataBase.AuctionEntity;
-import pl.edu.pjwstk.jaz.DataBase.MiniatureEntity;
-import pl.edu.pjwstk.jaz.DataBase.SectionService;
-import pl.edu.pjwstk.jaz.DataBase.UserService;
+import pl.edu.pjwstk.jaz.DataBase.*;
 import pl.edu.pjwstk.jaz.Requests.AuctionEditRequest;
 import pl.edu.pjwstk.jaz.Requests.AuctionRequest;
 import pl.edu.pjwstk.jaz.Requests.PhotosEditRequest;
@@ -19,12 +16,14 @@ import java.util.List;
 
 @RestController
 public class AuctionController {
-    private final SectionService sectionService;
+    private final AuctionService auctionService;
+
     private final UserService userService;
 
-    public AuctionController(SectionService sectionService, UserService userService) {
-        this.sectionService = sectionService;
+    public AuctionController(AuctionService auctionService, UserService userService) {
+
         this.userService = userService;
+        this.auctionService = auctionService;
     }
 
     @PreAuthorize("hasAnyAuthority('User')")
@@ -33,7 +32,7 @@ public class AuctionController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         System.out.println(auth.getPrincipal());
         Long owner_id = userService.getIdFromUser(String.valueOf(auth.getPrincipal()));
-        sectionService.addAuction(auctionRequest.getCategory(),auctionRequest.getTitle(),auctionRequest.getDescription(),auctionRequest.getPrice(),owner_id,auctionRequest.getPhotos(),auctionRequest.getValues(),auctionRequest.getParameters());
+        auctionService.addAuction(auctionRequest.getCategory(),auctionRequest.getTitle(),auctionRequest.getDescription(),auctionRequest.getPrice(),owner_id,auctionRequest.getPhotos(),auctionRequest.getValues(),auctionRequest.getParameters());
     }
 
     @PreAuthorize("hasAnyAuthority('User')")
@@ -42,7 +41,7 @@ public class AuctionController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         System.out.println("Edition auction by " + auth.getPrincipal());
         Long owner_id = userService.getIdFromUser(String.valueOf(auth.getPrincipal()));
-        sectionService.editAuction(auctionEditRequest.getAuction_id(),owner_id,auctionEditRequest.getParameter(),auctionEditRequest.getValue(),auctionEditRequest.getNewTitle(),auctionEditRequest.getNewPrice());
+        auctionService.editAuction(auctionEditRequest.getAuction_id(),owner_id,auctionEditRequest.getParameter(),auctionEditRequest.getValue(),auctionEditRequest.getNewTitle(),auctionEditRequest.getNewPrice());
     }
 
     @PreAuthorize("hasAnyAuthority('User')")
@@ -51,7 +50,7 @@ public class AuctionController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         System.out.println("Edition photos by " + auth.getPrincipal());
         Long owner_id = userService.getIdFromUser(String.valueOf(auth.getPrincipal()));
-        sectionService.editPhoto(photosEditRequest.getPosition(),photosEditRequest.getNewLink(),owner_id,photosEditRequest.getAuction_id());
+        auctionService.editPhoto(photosEditRequest.getPosition(),photosEditRequest.getNewLink(),owner_id,photosEditRequest.getAuction_id());
     }
 
     @PreAuthorize("hasAnyAuthority('User')")
@@ -60,7 +59,7 @@ public class AuctionController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         System.out.println("Edition photos by " + auth.getPrincipal());
         Long owner_id = userService.getIdFromUser(String.valueOf(auth.getPrincipal()));
-        sectionService.addPhoto(photosEditRequest.getNewLink(),owner_id,photosEditRequest.getAuction_id());
+        auctionService.addPhoto(photosEditRequest.getNewLink(),owner_id,photosEditRequest.getAuction_id());
     }
 
     @PreAuthorize("hasAnyAuthority('User')")
@@ -69,6 +68,6 @@ public class AuctionController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         System.out.println("Get Auctions with miniature by " + auth.getPrincipal());
         Long owner_id = userService.getIdFromUser(String.valueOf(auth.getPrincipal()));
-        return sectionService.getAuction(owner_id) ;
+        return auctionService.getAuction(owner_id) ;
     }
 }
