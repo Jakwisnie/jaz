@@ -1,7 +1,7 @@
 databaseChangeLog:
   - changeSet:
       id: 20201012_init
-      author: jw
+      author: Jakub Wiśniewski
       sqlFile:
         relativeToChangelogFile: true
         stripComments: true
@@ -9,7 +9,7 @@ databaseChangeLog:
         path: db.changelog/20201012_init.sql
   - changeSet:
       id: 20201206_add_users
-      author: jw
+      author: Jakub Wiśniewski
       sqlFile:
         relativeToChangelogFile: true
         stripComments: true
@@ -17,7 +17,7 @@ databaseChangeLog:
         path: db.changelog/20201206_add_users.sql
   - changeSet:
       id: 20201206_add_user_roles
-      author: jw
+      author: Jakub Wiśniewski
       sqlFile:
         relativeToChangelogFile: true
         stripComments: true
@@ -25,7 +25,7 @@ databaseChangeLog:
         path: db.changelog/20201213_add_user_roles.sql
   - changeSet:
       id: 20210112_add_auction
-      author: jw
+      author: Jakub Wiśniewski
       sqlFile:
         relativeToChangelogFile: true
         stripComments: true
