@@ -12,9 +12,7 @@ import pl.edu.pjwstk.jaz.Authorization.LoginRequest;
 import pl.edu.pjwstk.jaz.Authorization.RegisterRequest;
 import pl.edu.pjwstk.jaz.IntegrationTest;
 import pl.edu.pjwstk.jaz.Requests.*;
-
 import java.util.Arrays;
-
 import static io.restassured.RestAssured.given;
 
 @RunWith(SpringRunner.class)

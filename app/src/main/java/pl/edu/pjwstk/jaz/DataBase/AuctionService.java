@@ -14,12 +14,13 @@ import java.util.List;
 @Service
 public class AuctionService {
 
+    private static EntityManager entityManager;
     private final CategoryRepository categoryRepository;
     private final AuctionRepository auctionRepository;
     private final ParameterRepository parameterRepository;
-    private final EntityManager entityManager;
+
     private final AuctionParameterRepository auctionParameterRepository;
-    MiniatureEntity miniatureEntity;
+
 
     public AuctionService( CategoryRepository categoryRepository, AuctionRepository auctionRepository, ParameterRepository parameterRepository, EntityManager entityManager, AuctionParameterRepository auctionParameterRepository) {
 
@@ -38,6 +39,7 @@ public class AuctionService {
                 System.out.println("No category like that");
                 throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
             } else {
+
                 AuctionEntity auctionEntity = new AuctionEntity(title, description, owner_id, price);
                 categoryEntity.getAuctions().add(auctionEntity);
                 Long position = (long) 1;
@@ -139,7 +141,7 @@ public class AuctionService {
         }
     }
 
-    public AuctionEntity findAuctionByOwnerId(Long auction_id,Long owner_id) {
+    public static AuctionEntity findAuctionByOwnerId(Long auction_id, Long owner_id) {
         try {
             return entityManager.createQuery("select ue from AuctionEntity ue where ue.owner_id = :owner_id and ue.id =:auction_id", AuctionEntity.class)
                     .setParameter("owner_id", owner_id)
@@ -162,7 +164,7 @@ public class AuctionService {
         }
     }
 
-    public PhotoEntity findPhotoByAuctionId(Long auction_id,Long position) {
+    public static PhotoEntity findPhotoByAuctionId(Long auction_id, Long position) {
         try {
             return entityManager.createQuery("select ue from PhotoEntity ue where  ue.auction_id =:auction_id and ue.position =: position", PhotoEntity.class)
                     .setParameter("auction_id", auction_id)
@@ -179,27 +181,12 @@ public class AuctionService {
                .getSingleResult();
    }
 
-    public List<AuctionEntity> auctions(Long owner_id){
+    public static List<AuctionEntity> auctions(Long owner_id){
         return entityManager.createQuery("select ue from AuctionEntity ue where ue.owner_id =: owner_id",AuctionEntity.class)
                 .setParameter("owner_id",owner_id)
                 .getResultList();
     }
 
 
-    public List<MiniatureEntity> getAuction(Long owner_id) {
-       List<MiniatureEntity> miniatureEntities = new ArrayList<>();
-            for (AuctionEntity auction : auctions(owner_id) ){
-                miniatureEntity = new MiniatureEntity();
-                AuctionEntity auctionEntity = findAuctionByOwnerId(auction.getId(),owner_id);
-                PhotoEntity photoEntity = findPhotoByAuctionId(auctionEntity.getId(),1L);
-                miniatureEntity.setId(auction.getId());
-                miniatureEntity.setCategory_id(auction.getCategory_id());
-                miniatureEntity.setDescription(auction.getDescription());
-                miniatureEntity.setTitle(auction.getTitle());
-                miniatureEntity.setPrice(auction.getPrice());
-                miniatureEntity.setPhoto(photoEntity.getLink());
-                miniatureEntities.add(miniatureEntity);
-        }
-        return miniatureEntities;
-    }
+
 }
