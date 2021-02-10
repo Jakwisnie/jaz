@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c3eb446e-c8c0-4590-82d8-bf437780d61e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jaz-java" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jaz-java" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jaz-java" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1oFRVCUTsLyOL8WGXBFthw9C7X2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.edu.pjwstk.jaz.DataBase" />
+      <recent name="pl.edu.pjwstk.jaz.Controllers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Tests in 'jaz-java.app.test'">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuctionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AuctionTest.user2Logging" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest.user2Logging&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="NoUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.jaz.LoginRegister.NoUserTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SectionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'jaz-java.app.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="jaz-java.app.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.edu.pjwstk.jaz.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'jaz-java.app.test'" />
+        <item itemvalue="Gradle.AuctionTest" />
+        <item itemvalue="Gradle.SectionTest" />
+        <item itemvalue="Gradle.NoUserTest" />
+        <item itemvalue="Gradle.AuctionTest.user2Logging" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3eb446e-c8c0-4590-82d8-bf437780d61e" name="Default Changelist" comment="" />
+      <created>1612880375251</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612880375251</updated>
+      <workItem from="1612880376901" duration="2178000" />
+      <workItem from="1612889683160" duration="7973000" />
+      <workItem from="1612972877171" duration="1505000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="432" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612880576728">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="432" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.-32.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1612880576728" />
+    <state width="1637" height="301" key="GridCell.Tab.0.bottom" timestamp="1612974381361">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="301" key="GridCell.Tab.0.bottom/1680.-32.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1612974381361" />
+    <state width="1637" height="301" key="GridCell.Tab.0.center" timestamp="1612974381361">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="301" key="GridCell.Tab.0.center/1680.-32.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1612974381361" />
+    <state width="1637" height="301" key="GridCell.Tab.0.left" timestamp="1612974381361">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="301" key="GridCell.Tab.0.left/1680.-32.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1612974381361" />
+    <state width="1637" height="301" key="GridCell.Tab.0.right" timestamp="1612974381361">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="301" key="GridCell.Tab.0.right/1680.-32.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1612974381361" />
+    <state width="1637" height="336" key="GridCell.Tab.1.bottom" timestamp="1612897872114">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="336" key="GridCell.Tab.1.bottom/1680.-32.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1612897872114" />
+    <state width="1637" height="336" key="GridCell.Tab.1.center" timestamp="1612897872114">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="336" key="GridCell.Tab.1.center/1680.-32.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1612897872114" />
+    <state width="1637" height="336" key="GridCell.Tab.1.left" timestamp="1612897872114">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="336" key="GridCell.Tab.1.left/1680.-32.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1612897872114" />
+    <state width="1637" height="336" key="GridCell.Tab.1.right" timestamp="1612897872114">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="336" key="GridCell.Tab.1.right/1680.-32.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1612897872114" />
+    <state x="570" y="266" key="extract.method.dialog" timestamp="1612893602807">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="570" y="266" key="extract.method.dialog/1680.-32.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1612893602807" />
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1612897493919">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/1680.-32.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1612897493919" />
+  </component>
+</project>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2021-02-10T16:24:02" hostname="DESKTOP-GFTNV90" time="2.136">
+  <properties/>
+  <testcase name="adminAddSectionWithTheSameNameTest400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.168"/>
+  <testcase name="adminEditSectionTestWithEmptyNewName400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.167"/>
+  <testcase name="adminAddSectionTestWithNoData400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.083"/>
+  <testcase name="userEditSectionTest403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.081"/>
+  <testcase name="notLoggedPersonEditCategoryTest403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.008"/>
+  <testcase name="userAddCategoryTest403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.081"/>
+  <testcase name="adminAddSectionTest200" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.095"/>
+  <testcase name="adminAddCategoryTestWithBadSectionName400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.166"/>
+  <testcase name="adminEditSectionTest200" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.164"/>
+  <testcase name="notLoggedPersonEditSectionTest403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.008"/>
+  <testcase name="adminEditSectionTestWithBadSectionName400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.167"/>
+  <testcase name="userAddSectionTest403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.081"/>
+  <testcase name="adminAddCategoryTest200" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.172"/>
+  <testcase name="notLoggedPersonAddSectionTest403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.007"/>
+  <testcase name="notLoggedPersonAddCategoryTest403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.008"/>
+  <testcase name="adminEditCategoryTest200" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.088"/>
+  <testcase name="userEditCategoryTest403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.083"/>
+  <testcase name="adminEditCategoryTestWithEmptyCategoryNewName400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.25"/>
+  <testcase name="adminEditCategoryTestWithBadCategoryName400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.082"/>
+  <testcase name="adminAddCategoryTestWithEmptyCategoryName400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest" time="0.17"/>
+  <system-out><![CDATA[2021-02-10 17:24:02.580  INFO 2608 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest], using SpringBootContextLoader
+2021-02-10 17:24:02.581  INFO 2608 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-10 17:24:02.582  INFO 2608 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest]: SectionTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-10 17:24:02.583  INFO 2608 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration pl.edu.pjwstk.jaz.App for test class pl.edu.pjwstk.jaz.SectionAndAuctionTest.SectionTest
+2021-02-10 17:24:02.584  INFO 2608 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-02-10 17:24:02.584  INFO 2608 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@19518195, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5b74c0fb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@753bedaf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@62d3fe5d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@779b96bb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@a15e3ab, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@206921d3, org.springframework.test.context.event.EventPublishingTestExecutionListener@5d351295, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@763079c6, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@539dc410, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3a930009, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4fc70c74, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3accb203, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@74c5c0e, pl.edu.pjwstk.jaz.RestassuredPortListener@25fd97a6, pl.edu.pjwstk.jaz.TestContextHolder@522e8bc1]
+3
+3
+Same  section  name
+Same  section  name
+No section like that
+Same  section  name
+Same  section  name
+No section name like that
+Added auction : Kitchen
+Added auction : Bathroom
+Same  section  name
+Added auction : K
+Added auction : F
+No category name like that
+Same  section  name
+Added auction : Kitchen
+Added auction : 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

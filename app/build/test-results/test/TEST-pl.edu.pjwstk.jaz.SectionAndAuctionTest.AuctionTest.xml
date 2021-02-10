@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2021-02-10T16:23:57" hostname="DESKTOP-GFTNV90" time="4.79">
+  <properties/>
+  <testcase name="userAddAuctionTestWithEmptyParameterForValue400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.321"/>
+  <testcase name="userAddAuctionTestWithBadCategoryName400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.279"/>
+  <testcase name="userEditAuctionTestWithEmptyNewTitle400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.398"/>
+  <testcase name="adminAddPhoto403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.093"/>
+  <testcase name="userEditAuctionTestWithEmptyNewValue400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.364"/>
+  <testcase name="userEditAuctionTest200" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.388"/>
+  <testcase name="userGetAuctionsTest200" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.1"/>
+  <testcase name="userAddAuctionTestWithEmptyCategoryName400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.264"/>
+  <testcase name="userAddPhoto403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.102"/>
+  <testcase name="userAddAuctionTestWithEmptyTitleName400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.264"/>
+  <testcase name="adminAddAuctionTest403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.26"/>
+  <testcase name="userEditPhoto403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.092"/>
+  <testcase name="adminGetAuctionsTest403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.084"/>
+  <testcase name="user2EditPhoto403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.09"/>
+  <testcase name="user2AddPhoto403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.088"/>
+  <testcase name="userAddAuctionTest200" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.27"/>
+  <testcase name="notLoggedPersonAddAuctionTest403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.187"/>
+  <testcase name="userEditAuctionTestWithNewParameter200" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.363"/>
+  <testcase name="user2EditAuctionTestWithBadAuctionId400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.356"/>
+  <testcase name="user2GetAuctionsTest200" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.086"/>
+  <testcase name="userAddAuctionTestWithEmptyValueForParameter400" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.254"/>
+  <testcase name="adminEditPhoto403" classname="pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest" time="0.083"/>
+  <system-out><![CDATA[2021-02-10 17:23:57.668  INFO 2608 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest], using SpringBootContextLoader
+2021-02-10 17:23:57.669  INFO 2608 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-02-10 17:23:57.669  INFO 2608 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest]: AuctionTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-02-10 17:23:57.676  INFO 2608 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration pl.edu.pjwstk.jaz.App for test class pl.edu.pjwstk.jaz.SectionAndAuctionTest.AuctionTest
+2021-02-10 17:23:57.677  INFO 2608 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-02-10 17:23:57.678  INFO 2608 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7986060d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@48f0fd80, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3f96748d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@48cfeab2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1303bc8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4e63da93, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@425dfdce, org.springframework.test.context.event.EventPublishingTestExecutionListener@75f0154d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@759e8e40, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@25796522, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@8674fce, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7dc869f2, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7c251485, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@121b2e56, pl.edu.pjwstk.jaz.RestassuredPortListener@20301ae4, pl.edu.pjwstk.jaz.TestContextHolder@1e0970e9]
+2
+2
+2
+role Everyone
+role User
+add userpl.edu.pjwstk.jaz.DataBase.UserEntity@586981d7
+Added auction : X1
+Added auction : X2
+User
+Added auction : L1
+Added auction : L2
+User
+No category like that
+Added auction : Au1
+Added auction : Au2
+User
+Edition auction by User
+Added auction : Au3
+Added auction : Au4
+User
+Parameter already exists 
+Parameter already exists 
+Edition auction by User
+Added auction : F1
+Added auction : F2
+User
+Parameter already exists 
+Parameter already exists 
+Edition auction by User
+His/Her id : 2
+Get Auctions with miniature by User
+Added auction : S1
+Added auction : S2
+User
+Edition photos by User
+Added auction : D1
+Added auction : D2
+User
+Added auction : A1
+Added auction : A2
+Edition photos by User
+Edition photos by User2
+No auction found like this
+Edition photos by User2
+No auction found like this
+Added auction : H1
+Added auction : H2
+User
+Parameter already exists 
+Parameter already exists 
+Added auction : G1
+Added auction : G2
+Added auction : Au7
+Added auction : Au8
+User
+Parameter already exists 
+Parameter already exists 
+Edition auction by User
+His/Her id : 2
+Creating new parameter for auction_id : 1
+Added auction : Au5
+Added auction : Au6
+User
+Parameter already exists 
+Parameter already exists 
+Edition auction by User2
+His/Her id : 3
+No auction found like this
+Get Auctions with miniature by User2
+Added auction : Z1
+Added auction : Z2
+User
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
