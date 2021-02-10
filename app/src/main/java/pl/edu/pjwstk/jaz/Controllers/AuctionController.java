@@ -68,6 +68,6 @@ public class AuctionController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         System.out.println("Get Auctions with miniature by " + auth.getPrincipal());
         Long owner_id = userService.getIdFromUser(String.valueOf(auth.getPrincipal()));
-        return MiniatureService.getAuction(owner_id) ;
+        return auctionService.getAuction(owner_id) ;
     }
 }
